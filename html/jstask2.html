@@ -19,6 +19,13 @@
 		background:#9CF;
 		color:blue;
 	}
+	.three{
+		border:10px solid rgb(153,255,102);
+		width:500px;
+		height:auto;
+		background:rgb(255,255,0);
+		color:rgb(0,255,51);
+		}
 	</style>
 </head>
 
@@ -27,7 +34,8 @@
     <input type="button" value="添加样式" onclick="add()"/>
 	<p id="p2" class="one">JavaScript使网页显示动态效果并实现与用户交互功能。</p>
     <input type="button" value="更改外观" onclick="modify()"/>
-
+    <p id="p3" class="one"> XXXXXXXXXXXXXXXXX </p>
+    <input type="button" value="change" onclick="alter()"/>
 	<script type="text/javascript">
 	   function add(){
 	      var p1 = document.getElementById("p1");
@@ -36,7 +44,12 @@
 	   function modify(){
 	      var p2 = document.getElementById("p2");
 	      p2.className="two";
+		  
 	   }
+	   function alter(){
+		   var p3 = document.getElementById("p3");
+		   p3.className="three";
+		   }
 	</script>
 </body>
 </html>
